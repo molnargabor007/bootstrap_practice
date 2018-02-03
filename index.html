@@ -24,7 +24,7 @@
             <a class="nav-link" href="#service">Our Services <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Make an appointment</a>
+            <a class="nav-link" href="#appointment">Make an appointment</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">FAQ</a>
@@ -71,10 +71,10 @@
 
 <!--Cards-->
 
-<div id="service" class="container-fluid text-center px-5 my-5 border-bottom">
+<div id="service" class="container-fluid text-center px-md-5 my-3 pb-3 border-bottom">
   <h2>Our Service</h2>
  <div class="row justify-content-around">
-    <div class="col-md p-5">
+    <div class="col-md p-md-4 mt-3">
           <div class="card">
             <img class="card-img-top img-fluid" src="img/hair_styling.jpg" alt="hair styling">
             <div class="card-block p-3">
@@ -84,7 +84,7 @@
           </div>
         </div>
 
-        <div class="col-md p-5">
+        <div class="col-md p-md-4 mt-3">
             <div class="card">
                 <img class="card-img-top img-fluid" src="img/hair_coloring.jpg">
                 <div class="card-block p-3">
@@ -94,7 +94,7 @@
             </div>
         </div>
 
-          <div class="col-md p-5">
+          <div class="col-md p-md-4 mt-3">
             <div class="card">
               <img class="card-img-top img-fluid" src="img/haircut.jpg">
               <div class="card-block p-3">
@@ -104,8 +104,82 @@
             </div>
           </div>
     </div>
-
 </div>
+
+
+<!--forms and tables-->
+
+<div id="appointment" class="container text-center px-md-5 my-3 pb-3 border-bottom">
+  <h2 class="my-3">Make an appointment</h2>
+  <div class="row justify-content-around mt-4">
+    <div class="col-md">
+      <form>
+        <div class="form-group my-4">
+          <input type="text" class="form-control" id="name" placeholder="First and Last name">
+        </div>
+        <div class="form-group my-4">
+          <input type="text" class="form-control" id="phone" placeholder="Phone number">
+        </div>
+        <div class="form-group my-4">
+          <input type="text" class="form-control" id="date" placeholder="Date">
+        </div>
+        <div class="form-group my-4">
+          <textarea class="form-control" id="extra" rows="3">Other info (haircut wishes etc.)</textarea>
+        </div>
+        <div class="form-check my-2">
+          <input type="checkbox" class="form-check-input" id="check">
+          <label class="form-check-label" for="check">I agree terms and conditions</label>
+        </div>
+        <button type="submit" class="btn btn-dark my-2">Send</button>
+      </form>
+    </div>
+
+
+    <div class="col-md">
+        <table class="table table-bordered table-sm text-left mt-4">
+          <thead class="thead-light">
+            <th scope="col">Day</th>
+            <th scope="col">Working hours</th>
+          </thead>
+          <tbody>
+            <tr>
+            <td>Monday</td>
+            <td>8.00-16.00</td>
+            </tr>
+            <tr>
+            <td>Tuseday</td>
+            <td>10.00-18.00</td>
+            </tr>
+            <tr>
+            <td>Wednesday</td>
+            <td>8.00-16.00</td>
+            </tr>
+            <tr>
+            <td>Thursday</td>
+            <td>8.00-16.00</td>
+            </tr>
+            <tr>
+            <td>Friday</td>
+            <td>12.00-20.00</td>
+            </tr>
+            <tr>
+            <td>Saturday</td>
+            <td>8.00-16.00</td>
+            </tr>
+            <tr>
+            <td>Sunday</td>
+            <td>8.00-12.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+    </div>
+
+
+
+  </div>
+</div>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
